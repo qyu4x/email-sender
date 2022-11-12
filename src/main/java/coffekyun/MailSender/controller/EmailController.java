@@ -14,13 +14,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@RequestMapping("/notification")
+@RequestMapping("/email")
 public class EmailController {
 
     @Autowired
     private EmailService emailService;
 
-    @PostMapping("/email")
+    @PostMapping("/send")
     public ResponseEntity<?> sendEmail(@RequestBody EmailDetails emailDetails) {
         try {
             emailService.sendSimpleEmail(emailDetails);
