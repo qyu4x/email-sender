@@ -4,6 +4,6 @@ import coffekyun.MailSender.entity.EmailDetails;
 
 public interface EmailService {
 
-    String sendSimpleEmail(EmailDetails emailDetails);
+    String sendSimpleEmail();
 
 }

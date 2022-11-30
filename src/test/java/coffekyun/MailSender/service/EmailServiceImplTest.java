@@ -16,10 +16,7 @@ class EmailServiceImplTest {
     @Test
     void testSendEmail() {
 
-        EmailDetails emailDetails = new EmailDetails();
-        emailDetails.setRecipient("qq.khoiri@gmail.com");
-        emailDetails.setMessageBody("Hey! \n\n I love you so much \n\n Aishiteru ~ From Tsukasa Tsukoyomi");
-        emailService.sendSimpleEmail(emailDetails);
+        emailService.sendSimpleEmail();
 
     }
 }

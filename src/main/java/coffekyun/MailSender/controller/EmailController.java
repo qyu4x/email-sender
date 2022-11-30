@@ -23,7 +23,7 @@ public class EmailController {
     @PostMapping("/send")
     public ResponseEntity<?> sendEmail(@RequestBody EmailDetails emailDetails) {
         try {
-            emailService.sendSimpleEmail(emailDetails);
+            emailService.sendSimpleEmail();
             return new ResponseEntity<>(HttpStatus.OK);
         }catch (Exception exception) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
